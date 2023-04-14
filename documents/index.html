@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/documents/still.css" />
+  </head>
+  <body>
+    <h1 class="heading">Harcama Hesaplayıcı</h1>
+    <div class="container">
+      <h3 class="great">
+        Hoşgeldiniz..
+        <input type="text" id="btn" placeholder="Adınızı giriniz..." />
+      </h3>
+      <form>
+        <div class="double">
+          <div class="form-harcama">
+            <label>Harcama:</label>
+            <input type="text" id="harcama" placeholder="ürünü giriniz..." />
+          </div>
+          <div class="form-fiyat">
+            <label>Fiyat:</label>
+            <input type="number" placeholder="fiyatı giriniz..." id="fiyat" />
+          </div>
+        </div>
+        <div class="double">
+          <div class="form-durum">
+            <input type="checkbox" id="status-input" />
+            <label for="status-input">Ödendi</label>
+          </div>
+          <button id="ekleBtn">EKLE</button>
+        </div>
+      </form>
+      <!-- toplam ifadesi -->
+      <div class="toplam">
+        Toplam Harcama: <span id="toplam-bilgi">0</span> &#8378;
+      </div>
+      <!-- select box -->
+      <select name="" id="filter-select">
+        <option value="all">All</option>
+        <option value="payed">Payed</option>
+        <option value="not-payed">Not Payed</option>
+      </select>
+      <!-- liste -->
+
+      <div class="liste"></div>
+    </div>
+    <!-- java script codes -->
+    <script src="/documents/main.js"></script>
+  </body>
+</html>
